@@ -1,0 +1,7 @@
+/* 
+SELECT * FROM city; 
+SELECT * FROM city inner join country on(city.country_id=country_id);
+SELECT * FROM city inner join country on(city.country_id=country_id) WHERE(country.region_id=3)  ORDER BY city.name ASC;
+SELECT * FROM city inner join country on(city.country_id=country_id) inner join region on(country.region_id=region_id) WHERE(region.name like '%America%');
+
+*/

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introdução ao VueJs</title>
+</head>
+<body>
+	<div id="app">
+  	{{ message }} <br>
+  	<img v-if="exibirImagem" v-bind:src="imagem">
+  	<img v-else v-bind:src="Carregando">Carregando...<div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+  	el: '#app',
+  	data: 
+  	{
+    message: 'Olá Vue!',
+    imagem: 'https://img1.ibxk.com.br/2019/02/25/25044125149117.jpg',
+    exibirImagem: false,
+    Carregando:'https://media2.giphy.com/media/11FuEnXyGsXFba/source.gif'
+    }
+})</script>
+</body>
+</html>
